@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .roboto-black-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+:root{
+  --main-color: #5ec8b4;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    position: fixed;
+    height: fit-content;
+    z-index: 999;
+    padding: 20px 100px 20px 150px;
+    background-color: #151515;
+}
+
+.logo{
+    position: relative;
+}
+
+.logo h1{
+    font-size: 40px;
+    font-weight: bolder;
+}
+.logo a{
+  text-decoration: none;
+  color: var(--main-color);
+
+}
+
+.logo h6{
+     position: absolute;
+     bottom: -3px;
+     left: 15%;
+    font-size: 8px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+    gap: 50px;
+}
+
+#nav ul li{
+    list-style: none;
+    color: white;
+    position: relative;
+}
+#nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+#nav ul a::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: var(--main-color);
+  transition: 0.5s;
+}
+#nav ul a:hover::after{
+  width: 100%;
+}
+#nav ul li i{
+  transition: 0.5s;
+}
+#nav ul li i:hover{
+  transform: rotate(-360deg);
+  color: var(--main-color);
+}
+.sec-1{
+    background: linear-gradient(to right, #0c0c0c 30%, #203c36);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 0 150px;
+    overflow: hidden;
+}
+
+.sec-1 .info{
+    width: 30%;
+    margin-left: 150px;
+    
+}
+
+
+.sec-1 .info h4{
+    color: var(--main-color);
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 3px;
+    transition: 0.5s;
+}
+.sec-1 .info h1{
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 20px;
+    width: 150%;
+    transition: 0.5s;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.sec-1 .info h1::after{
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  height: 3px;
+  width: 70px;
+  background-color: var(--main-color);
+  border-radius: 5px;
+  transition: 0.6s;
+}
+
+.sec-1 .info h1:hover::after{
+  transform: translateX(120px);
+  width: 100px;
+}
+
+.sec-1 .info h1:hover{
+  color: var(--main-color);
+  span{
+    color: #fff;
+  }
+}
+.sec-1 .info h1 span{
+    color: var(--main-color);
+    transition: 0.5s;
+}
+
+.sec-1 .info p{
+    color: white;
+    font-size: 12px;
+    width: 100%;
+}
+
+.music{
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.music i{
+  font-size: 50px;
+  color: var(--main-color);
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 0 25px #0f715c;
+  margin-right: 15px;
+  position: relative;
+}
+
+.text{
+  position: relative;
+}
+
+.music .text h2{
+  color: white;
+  height: 35px;
+  width: fit-content;
+  font-size: 0.8rem;
+  border-radius: 0.5px solid #ffffff23;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  position: relative;
+}
+
+.music .text h2::after{
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: gray;
+
+}
+
+.music .text p{
+  bottom: -20px;
+  color: var(--main-color);
+  position: absolute;
+  font-size: 0.7rem;
+  width: fit-content;
+}
+
+.sec-1 .img{
+    width: 40%;
+}
+
+.sec-1 .img img{
+    width: 100%;
+    opacity: 0.6;
+}
+
