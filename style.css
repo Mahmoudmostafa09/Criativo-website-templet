@@ -644,3 +644,136 @@ header{
 .sec-5 .container .img-content img{
  width: 32%;
 }
+
+.sec-6{
+  background-image: linear-gradient(to left, #1c342f, black);
+  padding: 30px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.sec-6 .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+  
+}
+.sec-6 .container img{
+  width: 20%;
+  filter: grayscale(100%);
+  transition: 0.5s ;
+}
+
+.sec-6:hover{
+  .container > img{
+    filter: grayscale(0%);
+  }
+}
+
+.sec-6 > img{
+  position: absolute;
+  bottom: -120px;
+  left: 0;
+  opacity: calc(0.3);
+}
+.sec-7{
+  width: 100%;
+  background-color: black;
+  padding: 50px 250px;
+}
+.sec-7 .container{
+  display: flex;
+  width: 90%;
+  gap: 20px;
+}
+
+.sec-7 .container .left-side .text-content h2{
+  color: var(--main-color);
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 3px;
+  transition: 0.5s;
+}
+.sec-7 .container .left-side .text-content h1{
+  color: white;
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+    transition: 0.5s;
+    font-size: 40px;
+    font-weight: 700;
+    transition:0.3s ;
+}
+
+.sec-7 .container .left-side .text-content h1 span{
+  color: var(--main-color);
+  transition: 0.3s;
+}
+.sec-7 .container .left-side .text-content:hover{
+  h1{
+    color: var(--main-color);
+  }
+  h1 span{
+    color: white;
+  }
+}
+.sec-7 .container .left-side .img-content{
+  width: 100%;
+  position: relative;
+}
+
+.sec-7 .container .left-side .img-content img{
+  width: 100%;
+  margin-top: 80px;
+  
+}
+.sec-7 .container .left-side .img-content i{
+ position: absolute;
+ left: 40%;
+ right: 60%;
+ top: 40%;
+ bottom: 60%;
+ color: white;
+ font-size: 50px;
+}
+
+.sec-7 .container .right-side{
+  margin-top: 90px;
+
+}
+.sec-7 .container .right-side .img-content{
+  width: 100%;
+  position: relative;
+}
+
+.sec-7 .container .right-side .img-content img{
+  width: 100%;
+  margin-top: 40px;
+}
+
+.sec-7 .container .right-side .text-content > p{
+  color: #9a9a9a;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.sec-7 .container .right-side .text-content .p-content {
+  color: white;
+  margin-top: 60px;
+  font-size: 12px;
+  
+}
+.sec-7 .container .right-side .text-content .p-content p{
+  margin-top: 10px;
+  
+}
+.sec-7 .container .right-side .text-content .p-content p i{
+  color: var(--main-color);
+  font-size: 15px;
+  margin-right: 7px;
+}
+
+
+
