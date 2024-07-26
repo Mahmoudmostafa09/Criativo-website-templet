@@ -775,17 +775,19 @@ header{
   margin-right: 7px;
 }
 
-/* .sec-8{
+.sec-8{
   width: 100%;
-} */
+  
+}
 
 .sec-8 .text-content{
   background-image: url(Bg-1.jpg);
   height: 50vh;
   background-size: cover;
   background-position-y: center;
-  padding: 100px 500px;
+  /* padding: 100px 500px; */
   width: 100%;
+  position: relative;
 }
 
 .sec-8 .text-content h2{
@@ -794,24 +796,66 @@ header{
   font-size: 15px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  align-items: center;
-  
+  /* align-items: center; */
+  position: absolute;
+  left: 45%;
+  right: 0%;
+  top: 65px;
 }
 
 .sec-8 .text-content h1{
   color: white;
   font-size: 40px;
   font-weight: 700;
-  align-items: center;
-  
+  /* align-items: center; */
+  position: absolute;
+  left: 37%;
+  right: 0%;
+  top: 90px;
 }
 
 .sec-8 .text-content h1 span{
   color: var(--main-color);
 }
+.sec-8 .text-content h1::after{
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  height: 3px;
+  width: 70px;
+  background-color: var(--main-color);
+  border-radius: 5px;
+  transition: 0.6s;
+}
 
-.sec-8 .text-content p{
+.sec-8 .text-content h1:hover::after{
+  transform: translateX(120px);
+  width: 100px;
+}
+
+.sec-8 .text-content h1:hover{
+  color: var(--main-color);
+  span{
+    color: #fff;
+  }
+}
+.sec-8 .text-content .p-1{
   color: #e1d2d2;
   font-size: 12px;
-  align-items: center;
+  /* align-items: center; */
+  position: absolute;
+  left: 30%;
+  right: 27%;
+  top: 50%;
+}
+
+.sec-8 .text-content .p-2{
+  color: #e1d2d2;
+  font-size: 12px;
+  /* align-items: center; */
+  position: absolute;
+  left: 34%;
+  right: 27%;
+  top: 53%;
 }
