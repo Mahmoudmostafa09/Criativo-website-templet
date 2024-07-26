@@ -775,5 +775,43 @@ header{
   margin-right: 7px;
 }
 
+/* .sec-8{
+  width: 100%;
+} */
 
+.sec-8 .text-content{
+  background-image: url(Bg-1.jpg);
+  height: 50vh;
+  background-size: cover;
+  background-position-y: center;
+  padding: 100px 500px;
+  width: 100%;
+}
 
+.sec-8 .text-content h2{
+  
+  color: var(--main-color);
+  font-size: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  align-items: center;
+  
+}
+
+.sec-8 .text-content h1{
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+  align-items: center;
+  
+}
+
+.sec-8 .text-content h1 span{
+  color: var(--main-color);
+}
+
+.sec-8 .text-content p{
+  color: #e1d2d2;
+  font-size: 12px;
+  align-items: center;
+}
