@@ -927,3 +927,82 @@ header{
 .sec-9 .img-content .card .text .icons i{
   margin-right: 15px;
 }
+
+.sec-10{
+  background-color: black;
+  padding: 130px 0px;
+  width: 100%;
+  height: fit-content;
+}
+.sec-10 .text-content{
+  width: 100%;
+}
+.sec-10 .text-content h2{
+  color: var(--main-color);
+  font-size: 18px;
+  letter-spacing: 3px;
+  align-items: center;
+  padding-left:600px;
+  padding-bottom: 20px;
+  
+}
+
+.sec-10 .text-content h1{
+  position: relative;
+  color: white;
+  font-size: 50px;
+  font-weight: 600;
+  padding-left: 520px;
+  padding-bottom: 50px;
+  transition: 0.5s;
+}
+.sec-10 .text-content h1 span{
+  color: var(--main-color);
+  transition: 0.5s;
+}
+.sec-10 .text-content h1::after{
+  content: "";
+  position: absolute;
+  bottom: 45px;
+  left: 520px;
+  height: 3px;
+  width: 70px;
+  background-color: var(--main-color);
+  border-radius: 5px;
+  transition: 0.6s;
+}
+
+.sec-10 .text-content h1:hover::after{
+  transform: translateX(120px);
+  width: 100px;
+}
+
+.sec-10 .text-content h1:hover{
+  color: var(--main-color);
+  span{
+    color: #fff;
+  }
+}
+.sec-10 .text-content p{
+  color: #919191;
+  width: 70%;
+  margin: auto;
+  font-size: 15px;
+}
+/* .sec-10 .text-content .p-1{
+  padding-left: 10px;
+} */
+.sec-10 .text-content .p-2{
+  padding-left: 200px;
+  padding-bottom: 25px;
+}
+
+.sec-10 table{
+  width: 90%;
+  padding-left: 200px;
+}
+
+.sec-10 table tr td img{
+  width: 100%;
+  padding: 8px;
+}
